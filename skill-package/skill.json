@@ -1,0 +1,39 @@
+{
+  "manifest": {
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "YTM Player",
+          "summary": "Play music on Echo devices",
+          "description": "A music playback skill.",
+          "examplePhrases": [
+            "Alexa, open youtube",
+            "Alexa, ask youtube to play music"
+          ],
+          "keywords": ["music", "audio"]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "distributionCountries": [],
+      "category": "MUSIC_AND_AUDIO",
+      "testingInstructions": "Invoke the skill and request a song."
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda",
+          "uri": "ask-custom-ytm-default"
+        }
+      }
+    },
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    }
+  }
+}
